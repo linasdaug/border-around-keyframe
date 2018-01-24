@@ -1,12 +1,12 @@
 body {
-    background-color: grey;
+    background-color: #4A5CCE;
 }
 
 
-.kvadratas {
+.myButton {
     margin: 0 auto;
     top: 35vh;
-    background-color: grey;
+    background-color: #4A5CCE;
     width: 200px;
     height: 140px;
     border: 2px solid white;
@@ -16,70 +16,81 @@ body {
     cursor: pointer;
 }
 
-.kvadratas p {
+.myButton p {
     color: white;
     padding: 40px 0;
     font-size: 20px;
 }
 
 .ontop {
+    display: none;
     position: absolute;
     width: 202px;
     height: 3px;
     top: -2px;
     right: -5px;
-    background-color: grey;
-    border: 1px solid grey;
+    background-color: #4A5CCE;
+    border: 1px solid #4A5CCE;
 }
 
 .onright {
+    display: none;
     position: absolute;
     width: 3px;
     height: 165px;
     bottom: -6px;
     right: -2px;
-    background-color: grey;
-    border: 2px solid grey;
+    background-color: #4A5CCE;
+    border: 2px solid #4A5CCE;
 }
 
 .onbottom {
+    display: none;
     position: absolute;
     width: 203px;
     height: 3px;
     bottom: -2px;
     left: -6px;
-    background-color: grey;
-    border: 2px solid grey;
+    background-color: #4A5CCE;
+    border: 2px solid #4A5CCE;
 }
 
 
 .onleft {
+    display: none;
     position: absolute;
     width: 3px;
     height: 165px;
     top: -6px;
     left: -2px;
-    background-color: grey;
-    border: 2px solid grey;
+    background-color: #4A5CCE;
+    border: 2px solid #4A5CCE;
 }
 
+.showit {
+    display: block;
+}
 
-.kvadratas:hover .ontop {
+.myButton:hover .ontop {
+    display: block;
     animation: showborder-top 0.8s;
     animation-fill-mode: both;
 }
 
-.kvadratas:hover .onright {
+.myButton:hover .onright {
+    display: block;
     animation: showborder-right 0.8s;
     animation-fill-mode: both;
 }
 
-.kvadratas:hover .onbottom {
+.myButton:hover .onbottom {
+    display: block;
     animation: showborder-bottom 0.8s;
     animation-fill-mode: both;
 }
 
-.kvadratas:hover .onleft {
+.myButton:hover .onleft {
+    display: block;
     animation: showborder-left 0.8s;
     animation-fill-mode: both;
 }
